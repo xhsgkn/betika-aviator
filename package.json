@@ -1,0 +1,24 @@
+{
+  "name": "cri",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "scripts/start-chrome.sh https://www.betika.com && sleep 3 && node src/index.js",
+    "dev": "scripts/start-chrome.sh https://www.betika.com && sleep 3 && nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "chrome-remote-interface": "^0.33.2",
+    "luxon": "^3.5.0",
+    "winston": "^3.17.0",
+    "winston-daily-rotate-file": "^5.0.0",
+    "ws": "^8.18.0",
+    "yargs": "^17.7.2"
+  }
+}
